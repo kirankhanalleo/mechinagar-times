@@ -1,0 +1,42 @@
+.footer{
+    background-color: #212121;
+    height:max-content;
+    color: rgb(232, 220, 220);
+    height: 310px;
+    .footerContents{
+        max-width: 1240px;
+        padding-top: 2rem;
+        .row{
+            padding-left: 5%;
+            display: flex;
+            justify-content: space-between;
+            .col{
+                display: flex;
+                flex-direction: column;
+                gap:0.5rem;
+                max-width: 300px;
+                .footerLogo{
+                    height:70px;
+                    width:200px;
+                }
+                .mail,.phone{
+                    display: inline-flex;
+                    align-items: center;
+                    gap:0.5rem;
+                }
+                .footerLinks{
+                    display: flex;
+                    flex-direction: column;
+                    gap:0.8rem;
+                    .link{
+                        transition: 300ms all ease-in-out;
+                        &:hover{
+                            cursor: pointer;
+                            color:rgb(67, 187, 67);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

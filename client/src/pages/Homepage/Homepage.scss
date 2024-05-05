@@ -1,0 +1,19 @@
+.homePage{
+    .rowWrapper{
+        max-width: 1310px;
+        .firstRow{
+            display: flex;
+            gap:6rem;
+            .firstRowColumn1{
+                margin-left: 5%;
+                flex:2;
+            }
+            .firstRowColumn2{
+                display: flex;
+                flex-direction: column;
+                flex:1;
+                gap:2.5rem;
+            }
+        }
+    }
+}

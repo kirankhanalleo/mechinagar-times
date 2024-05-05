@@ -1,0 +1,73 @@
+.popularNews{
+    height:1200px;
+    .popularNewsContents{
+        display: flex;
+        flex-direction: column;
+        gap:1.5rem;
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1{
+                position: relative;
+            &::after{
+                content:" ";
+                height:2px;
+                width:350%;
+                background-color: gray;
+                display: block;
+                position: absolute;
+                right:0;
+                left:150%;
+                top:50%;
+            }
+            }
+            .viewAll{
+                color:orangered;
+                transition: color 300ms ease-in-out;
+                &:hover{
+                    cursor: pointer;
+                    color:#5e8b7e;
+                }
+            }
+        }
+        .newsContentWrapper{
+            display: flex;
+            gap:1.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+            &:hover{
+                cursor: pointer;
+            }
+            .newsContent{
+                height:350px;
+                display: flex;
+                flex-direction: column;
+                gap:0.5rem;
+                flex: 1 0 40%;
+                max-width:50%;
+                .imageContainer{
+                    img{
+                        height:200px;
+                        width:99%;
+                    }
+                }
+                .newsContainer{
+                    display: flex;
+                    flex-direction: column;
+                    .publishedDate{
+                        display: flex;
+                        align-items: center;
+                        gap:0.5rem;
+                        color: rgb(101, 101, 101);
+                    }
+                    .headline{
+                        font-weight: 700;
+                        font-size: 17px;
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
+    }
+}

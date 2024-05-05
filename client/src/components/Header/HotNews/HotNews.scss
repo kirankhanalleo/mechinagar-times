@@ -1,0 +1,71 @@
+.hotNews{
+    background-color: rgb(26, 25, 25);
+    min-height:150px;
+    color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .hotNewsContents{
+        display: flex;
+        align-items: center;
+        gap:2rem;
+        padding:0px 30px;
+        position: relative;
+        .title{
+            h1{
+                font-size: 2rem;
+                line-height: 1.3;
+            }
+        }
+        .newsCarousel{
+            display: flex;
+            align-items: center;
+            gap:1.3rem;
+            &:hover{
+                cursor: pointer;
+            }
+            .leftContent{
+                .newsImage{
+                    height:90px;
+                }
+            }
+            .rightContent{
+                display: flex;
+                flex-direction: column;
+                gap:0.7rem;
+                .newsTitle{
+                    max-width: 200px;
+                    line-height: 1.5;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                .publishedDate{
+                    display: flex;
+                    align-items: center;
+                    gap:0.4rem;
+                    color:gray;
+                }
+            }
+        }
+        .switchRight{
+            position: absolute;
+            right:40px;
+            bottom:20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap:1rem;
+            .left,.right{
+                background-color: rgb(145, 14, 14);
+                font-size: 25px;
+                border-radius: 50%;
+                height:30px;
+                width:30px;
+                padding:5px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
