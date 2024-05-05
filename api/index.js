@@ -13,7 +13,9 @@ app.use(cookieParser());
 //middlewares
 app.use("/api/news", newsRoute);
 app.use("/api/user", userRoute);
-
+app.get("/", (req, res) => {
+  res.send("Hello from server");
+});
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;
   const errorMessage = err.message || "Internal Server Error !";
